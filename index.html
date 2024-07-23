@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="boxes">
+    <div class="box">
+        <img src="imgs/foto1.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi eum odio doloremque voluptatem aspernatur pariatur accusantium libero, ullam eaque magni illum quisquam architecto, tempora natus a praesentium vitae ratione!</p>
+    </div>
+    <div class="box">
+        <img src="imgs/foto2.jpg">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus minima quo hic officiis itaque consequuntur expedita modi, vitae voluptas molestias architecto ea veritatis porro incidunt deserunt velit perferendis enim vel.</p>
+    </div>
+    <div class="box">
+        <img src="imgs/foto3.jpg">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus itaque ratione magnam distinctio porro culpa illo animi dicta fuga quis, aliquam ipsa molestias suscipit natus fugiat ullam eius officiis inventore?</p>
+    </div>
+    <div class="box">
+        <img src="imgs/foto4.jpg">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos iste, illo praesentium error voluptates facilis esse necessitatibus quasi est minima. Repellendus, labore? Et delectus pariatur sint excepturi officiis, rem consectetur.</p>
+    </div>
+
+</div>
+
+<script>
+
+$(".box").mouseover(function(){
+$(this).children("p").css({"transform":"scale(1)","transition":"300ms ease"});
+$(this).css({"filter":"grayscale(0)","transition":"300ms ease"});
+})
+
+$(".box").mouseleave(function(){
+$(this).children("p").css({"transform":"scale(0)","transition":"300ms ease"});
+$(this).css({"filter":"grayscale(1)","transition":"300ms ease"});
+
+})
+
+</script>
+
+</body>
+</html>
